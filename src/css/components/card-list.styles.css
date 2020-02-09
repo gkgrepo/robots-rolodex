@@ -2,6 +2,9 @@
   width: 85vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  /* grid-template-rows: 400px; */
+  border: 2px solid gray;
   grid-gap: 20px;
+  justify-content: center;
 }

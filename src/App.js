@@ -19,23 +19,13 @@ class App extends Component {
       .then(response => response.json())
       .then(users => {
         this.setState({ monsters: users });
-        users.forEach(user => {
-          console.log(user.name);
-        });
       });
   }
 
   render() {
     return (
       <div className="App">
-        <CardList name={"HOLA"}>
-          {this.state.monsters.map(monster => (
-            <h1 key={monster.id}>
-              {monster.name}
-              {monster.email}
-            </h1>
-          ))}
-        </CardList>
+        <CardList monsters={this.state.monsters}></CardList>
       </div>
     );
   }
