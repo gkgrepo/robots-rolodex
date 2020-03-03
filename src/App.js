@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-// import logo from "./logo.svg";
 import { CardList } from "./components/card-list/card-list.component";
 import { SearchBox } from "./components/search-box/search-box.component";
 import "./App.css";
-
-// function App() {
 
 class App extends Component {
   state = {
